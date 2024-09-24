@@ -1,0 +1,129 @@
+/* General page styles */
+.home-page {
+    font-family: 'Arial', sans-serif;
+    padding: 0 0px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+p.p-home {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #ff6200;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+}
+
+/* Feature section styles */
+.features {
+    padding: 150px 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Reduce the gap between items */
+    justify-items: center;
+    padding: 0 40px; /* Add padding around the features grid */
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 85%;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.feature-item:nth-child(1) {
+    background-color: #fffacd; /* Light yellow */
+}
+
+.feature-item:nth-child(4) {
+    background-color: #fffacd; /* Light yellow */
+}
+
+/* Home.css */
+.carousel .legend {
+    background: none !important; /* Remove the black background */
+    color: #fff; /* Ensure the text is visible */
+    padding: 10px; /* Adjust padding if necessary */
+    text-align: left; /* Optional: Align text as needed */
+}
+
+/* ADJUST CAROUSEL IMG SIZE  */
+.carouselImg {
+    max-height: 748px;
+}
+
+.homeSlogan {
+    color: #f1f1f1;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+

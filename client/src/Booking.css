@@ -1,0 +1,134 @@
+.booking-page {
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.booking-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.booking-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.booking-container h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-group h2 {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.slot-buttons, .room-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.service-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between items */
+}
+
+.service-checkboxes label {
+    display: flex;
+    justify-content: space-between; /* Aligns text and checkbox on opposite sides */
+    align-items: center; /* Centers items vertically */
+    padding: 5px 0; /* Adds padding for better spacing */
+    border-bottom: 1px solid #eee; /* Optional: adds a line between items */
+}
+
+input[type="checkbox"] {
+    appearance: none; /* Removes default checkbox style */
+    width: 20px; /* Custom checkbox width */
+    height: 20px; /* Custom checkbox height */
+    border: 2px solid #4a90e2; /* Custom border color */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Changes cursor to pointer */
+    position: relative; /* For the checkmark */
+}
+
+input[type="checkbox"]:checked {
+    background-color: #4a90e2; /* Background color when checked */
+}
+
+input[type="checkbox"]:checked::after {
+    content: ''; /* Creates a pseudo-element */
+    position: absolute;
+    left: 5px; /* Adjusts position for the checkmark */
+    top: 2px; /* Adjusts position for the checkmark */
+    width: 8px; /* Checkmark width */
+    height: 15px; /* Checkmark height */
+    border: solid white; /* Checkmark color */
+    border-width: 0 2px 2px 0; /* Creates a checkmark shape */
+    transform: rotate(45deg); /* Rotates the checkmark */
+}
+
+
+.booking-summary {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.book-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.book-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    .booking-container {
+        padding: 20px;
+    }
+}
